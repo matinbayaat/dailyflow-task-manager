@@ -10,7 +10,7 @@ load_dotenv()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'super-secret-key')
 
-# درست کردن مسیر دیتابیس
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(basedir, "instance", "tasks.db")}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -26,7 +26,7 @@ class Task(db.Model):
     is_completed = db.Column(db.Boolean, default=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
-# ایجاد پوشه instance و دیتابیس
+
 if not os.path.exists('instance'):
     os.makedirs('instance')
 
@@ -72,17 +72,17 @@ def delete_task(task_id):
 def history():
     all_tasks = Task.query.order_by(Task.date.desc(), Task.created_at.desc()).all()
     
-    # گروه‌بندی تسک‌ها بر اساس روز
+   
     grouped = defaultdict(list)
     for task in all_tasks:
         grouped[task.date].append(task)
     
-    # آماده‌سازی داده برای نمودار - همه روزهایی که تسک دارند
+    
     dates = []
     completed = []
     not_completed = []
     
-    # مرتب‌سازی روزهای موجود از جدید به قدیمی
+    
     for day in sorted(grouped.keys(), reverse=True):
         day_tasks = grouped[day]
         dates.append(day.strftime('%Y-%m-%d'))
