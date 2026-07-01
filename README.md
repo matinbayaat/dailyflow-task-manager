@@ -40,6 +40,25 @@ Open your browser and go to http://127.0.0.1:5000
 - Advanced monthly statistics
 - Mobile PWA support
 
-## ⚠️ Disclaimer
-This project is developed for educational and portfolio purposes. Please use it responsibly and respect data privacy.
+---
 
+# DailyFlow - مدیریت وظایف روزانه
+
+یک برنامه زیبا و مدرن برای مدیریت وظایف روزانه که با Flask ساخته شده است و امکاناتی مانند تاریخچه وظایف، پیگیری پیشرفت و نمودارهای تعاملی را ارائه می‌دهد.
+
+## ✨ امکانات
+
+- افزودن وظایف روزانه همراه با توضیحات اختیاری
+- علامت‌گذاری وظایف به عنوان انجام‌شده یا انجام‌نشده
+- مشاهده تاریخچه کامل تمام وظایف بر اساس تاریخ
+- نمودارهای تعاملی پیشرفت (خطی و میله‌ای)
+- رابط کاربری تمیز، واکنش‌گرا و کاربرپسند
+
+## 🚀 نصب و اجرا
+
+```bash
+git clone https://github.com/matinbayaat/dailyflow-task-manager.git
+cd dailyflow-task-manager
+pip install -r requirements.txt
+python app.py
+```
