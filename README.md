@@ -43,4 +43,3 @@ Open your browser and go to http://127.0.0.1:5000
 ## ⚠️ Disclaimer
 This project is developed for educational and portfolio purposes. Please use it responsibly and respect data privacy.
 
-Developed by Matin | Computer Engineering Student
