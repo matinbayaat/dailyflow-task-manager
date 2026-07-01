@@ -61,4 +61,19 @@ git clone https://github.com/matinbayaat/dailyflow-task-manager.git
 cd dailyflow-task-manager
 pip install -r requirements.txt
 python app.py
-```
+``` 
+# پس از اجرا، مرورگر خود را باز کرده و به آدرس زیر بروید:
+
+http://127.0.0.1:5000
+# ماژول های استفاده شده در این پروژه:
+- Flask
+- SQLAlchemy + SQLite
+- Bootstrap 5
+- Chart.js
+- Jinja2
+
+# 📝 برنامه‌های توسعه آینده
+- سیستم احراز هویت کاربران
+- جستجو و فیلتر وظایف
+- آمار و گزارش‌های پیشرفته ماهانه
+- پشتیبانی از PWA (اپلیکیشن وب پیش‌رونده) برای موبایل
